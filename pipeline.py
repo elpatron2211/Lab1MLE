@@ -2,6 +2,10 @@ import pandas as pd
 
 data = pd.read_csv('loan_data.csv')
 
+data.dropna(axis=0, how='any', inplace=True)
+
+data.drop(data[data['person_age']>=100].index, inplace=True)
+
 data['gender'] =  data['person_gender'].map({'male':1, 'female':0})
 
 education_map = {
