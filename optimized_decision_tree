@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<previous_loan_defaults_on_file &le; 0.5<br/>entropy = 1.0<br/>samples = 35994<br/>value = [17997.0, 17997.0]<br/>class = Denied>, fillcolor="#ffffff"] ;
+1 [label=<loan_percent_income &le; 0.245<br/>entropy = 0.824<br/>samples = 17738<br/>value = [6260.441, 17997.0]<br/>class = Approved>, fillcolor="#7ebfee"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<person_income &le; 42698.5<br/>entropy = 0.935<br/>samples = 14135<br/>value = [5950.569, 10975.92]<br/>class = Approved>, fillcolor="#a4d2f3"] ;
+1 -> 2 ;
+3 [label=<person_income &le; 24405.5<br/>entropy = 0.648<br/>samples = 2883<br/>value = [760.536, 3824.362]<br/>class = Approved>, fillcolor="#60b0ea"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.198<br/>samples = 640<br/>value = [41.145, 1295.784]<br/>class = Approved>, fillcolor="#3fa0e6"] ;
+3 -> 4 ;
+5 [label=<entropy = 0.763<br/>samples = 2243<br/>value = [719.391, 2528.578]<br/>class = Approved>, fillcolor="#71b9ec"] ;
+3 -> 5 ;
+6 [label=<person_home_ownership_OWN &le; 0.5<br/>entropy = 0.982<br/>samples = 11252<br/>value = [5190.033, 7151.558]<br/>class = Approved>, fillcolor="#c9e4f8"] ;
+2 -> 6 ;
+7 [label=<entropy = 0.974<br/>samples = 10753<br/>value = [4876.304, 7126.812]<br/>class = Approved>, fillcolor="#c0e0f7"] ;
+6 -> 7 ;
+8 [label=<entropy = 0.377<br/>samples = 499<br/>value = [313.729, 24.746]<br/>class = Denied>, fillcolor="#e78b49"] ;
+6 -> 8 ;
+9 [label=<person_home_ownership_RENT &le; 0.5<br/>entropy = 0.253<br/>samples = 3603<br/>value = [309.872, 7021.08]<br/>class = Approved>, fillcolor="#42a1e6"] ;
+1 -> 9 ;
+10 [label=<person_income &le; 25255.0<br/>entropy = 0.834<br/>samples = 803<br/>value = [288.014, 798.617]<br/>class = Approved>, fillcolor="#80c0ee"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 82<br/>value = [0.0, 184.469]<br/>class = Approved>, fillcolor="#399de5"] ;
+10 -> 11 ;
+12 [label=<entropy = 0.904<br/>samples = 721<br/>value = [288.014, 614.148]<br/>class = Approved>, fillcolor="#96cbf1"] ;
+10 -> 12 ;
+13 [label=<loan_percent_income &le; 0.255<br/>entropy = 0.034<br/>samples = 2800<br/>value = [21.858, 6222.463]<br/>class = Approved>, fillcolor="#3a9de5"] ;
+9 -> 13 ;
+14 [label=<entropy = 0.239<br/>samples = 272<br/>value = [21.858, 535.411]<br/>class = Approved>, fillcolor="#41a1e6"] ;
+13 -> 14 ;
+15 [label=<entropy = 0.0<br/>samples = 2528<br/>value = [0.0, 5687.052]<br/>class = Approved>, fillcolor="#399de5"] ;
+13 -> 15 ;
+16 [label=<entropy = -0.0<br/>samples = 18256<br/>value = [11736.559, 0.0]<br/>class = Denied>, fillcolor="#e58139"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
