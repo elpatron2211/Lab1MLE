@@ -1,3 +1,4 @@
 *.csv
 pipeline_tests.ipynb
 *.json
+/.venv/
